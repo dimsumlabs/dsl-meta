@@ -1,0 +1,9 @@
+
+- Welcome everyone
+- Explain what DSL is
+- We are member supported
+- Introductory membership
+- Fridge, with beer and softdrinks
+- We now going around the room, introducing ourselves and describing what
+  you like to hack on
+- If there is a talk, introduce the talk
