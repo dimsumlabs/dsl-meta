@@ -1,3 +1,5 @@
+If you are the DSL member hosting a social night, the following is a
+list of the things to mention.
 
 - Welcome everyone
 - Explain what DSL is
@@ -7,5 +9,8 @@
 - We now going around the room, introducing ourselves and describing what
   you like to hack on
 - Ask the room if they have a 15 - 20 minute talk that they would like to
-  present in the future
+  present in the future, or a topic the want to hear more about
 - If there is a talk, introduce the talk
+
+Additionally, the host should make sure that someone is greeting any
+new visitors and welcoming them to the space.
