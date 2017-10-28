@@ -3,7 +3,8 @@ list of the things to mention.
 
 - Welcome everyone
 - Explain what DSL is
-- We are member supported
+- We are member supported (remind visitors that if they have enjoyed their time
+  at DSL, we would appreciate a small donation
 - Introductory membership
 - Fridge, with beer and softdrinks
 - We now going around the room, introducing ourselves and describing what
