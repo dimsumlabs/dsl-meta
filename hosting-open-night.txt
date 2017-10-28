@@ -6,4 +6,6 @@
 - Fridge, with beer and softdrinks
 - We now going around the room, introducing ourselves and describing what
   you like to hack on
+- Ask the room if they have a 15 - 20 minute talk that they would like to
+  present in the future
 - If there is a talk, introduce the talk
