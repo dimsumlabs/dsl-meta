@@ -15,7 +15,7 @@
    y="0px"
    viewBox="0 0 200 347"
    xml:space="preserve"
-   sodipodi:docname="dsl-1.svg"
+   sodipodi:docname="dsl-front-1.svg"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"><metadata
      id="metadata51"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -39,7 +39,17 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" /><rect
+     inkscape:current-layer="Layer_1"
+     showguides="true"
+     inkscape:guide-bbox="true"><sodipodi:guide
+       position="-322.30286,320.22349"
+       orientation="0,1"
+       id="guide85"
+       inkscape:locked="false" /><sodipodi:guide
+       position="11.956397,294.75117"
+       orientation="1,0"
+       id="guide89"
+       inkscape:locked="false" /></sodipodi:namedview><rect
      id="XMLID_81_"
      fill="#E01F30"
      width="200"
