@@ -1,0 +1,30 @@
+#
+# Show the fridge flowchart
+#
+
+digraph G {
+    count [shape=ellipse];
+    enough [shape=diamond];
+    purchase [shape=ellipse];
+    done [shape=rectangle];
+    sadtrombone [shape=rectangle];
+
+    #thirsty [shape=rectangle];
+    #nothing [shape=diamond];
+    #pay [shape=ellipse];
+    #take [shape=ellipse];
+    #
+    #thirsty -> nothing;
+    #nothing -> sadtrombone;
+    #
+    #nothing -> pay;
+    #pay -> take;
+    #take -> done;
+
+    count -> enough;
+    enough -> sadtrombone;
+
+    enough -> purchase;
+    purchase -> fill;
+    fill -> done;
+}
