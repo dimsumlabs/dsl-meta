@@ -3,28 +3,32 @@
 #
 
 digraph G {
-    count [shape=ellipse];
-    enough [shape=diamond];
-    purchase [shape=ellipse];
-    done [shape=rectangle];
+    layout=circo;
+
+    fontsize="50";
+    labelloc="t";
+    label="How does the fridge work?";
+
+    lookingempty [shape=diamond label="Does the fridge\nlook empty?"];
+    count [shape=ellipse label="Count the money\nin the fridge"];
+    enough [shape=diamond label="Is there enough\nto fill the fridge?"];
+    purchase [shape=ellipse label="Visit the U-Select and\npurchase items to\nfill the fridge"];
+    fill [shape=ellipse label="Fill the fridge with\nthe new purchases"];
+    drink [shape=rectangle label="Take drinks and pay\nfor them as normal"];
     sadtrombone [shape=rectangle];
+    spacer [shape=none label=""];
+    note [shape=rectangle label="Leave abount $150 in the fridge.\nWrite a note with the date, how\nmuch you spent and how much\n extra cash you have.  Place the\nnote and the extra cash in the\ndonations tin"];
 
-    #thirsty [shape=rectangle];
-    #nothing [shape=diamond];
-    #pay [shape=ellipse];
-    #take [shape=ellipse];
-    #
-    #thirsty -> nothing;
-    #nothing -> sadtrombone;
-    #
-    #nothing -> pay;
-    #pay -> take;
-    #take -> done;
+    ref [shape=none label="https://github.com/dimsumlabs/dsl-meta signs/fridge-process.dot"];
 
+    lookingempty -> count [label="The fridge looks empty"];
+    lookingempty -> drink;
     count -> enough;
-    enough -> sadtrombone;
+    enough -> sadtrombone [label="Not enough money"];
 
-    enough -> purchase;
+    enough -> purchase [label="There is enough money  "];
     purchase -> fill;
-    fill -> done;
+    purchase -> spacer -> note;
+    fill -> drink;
+    drink -> lookingempty;
 }
