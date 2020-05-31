@@ -1,4 +1,4 @@
-WIP wiring diagram of the space.
+WIP wiring plan of the space.
 
 See also: [wiki.dimsumlabs.com/Wiring][1]
 
