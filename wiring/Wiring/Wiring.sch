@@ -98,14 +98,6 @@ Wire Wire Line
 Text GLabel 6650 1800 2    50   Input ~ 0
 D-B-C-FRIDGE
 Wire Wire Line
-	7100 5000 7100 5400
-Text GLabel 7100 5000 1    50   Input ~ 0
-H-ROUTER...
-Text GLabel 7400 5000 1    50   Input ~ 0
-J-BACK-LIGHTS
-Wire Wire Line
-	7400 5000 7400 5400
-Wire Wire Line
 	6700 5400 6700 5100
 Wire Wire Line
 	7000 5400 7000 2600
@@ -167,12 +159,6 @@ Wire Wire Line
 	3900 2200 3900 5400
 Wire Wire Line
 	6000 3000 6900 3000
-Wire Bus Line
-	6350 1800 6650 1800
-Wire Bus Line
-	7250 1600 7750 1600
-Wire Bus Line
-	7050 1900 7600 1900
 Wire Wire Line
 	4000 2300 4000 5400
 Wire Wire Line
@@ -181,4 +167,121 @@ Text Notes 5250 5200 0    50   ~ 0
 TODO: Connect these to E!
 Text Notes 7300 1450 0    50   ~ 0
 27V if circuit broken
+Wire Notes Line
+	9000 2500 9500 2500
+Wire Notes Line
+	9500 2500 9500 3100
+Wire Notes Line
+	9000 3100 9000 2500
+Text Notes 9400 3050 0    50   ~ 0
+H
+Wire Notes Line
+	10500 2500 11000 2500
+Wire Notes Line
+	11000 2500 11000 3100
+Wire Notes Line
+	11000 3100 10500 3100
+Wire Notes Line
+	10500 3100 10500 2500
+Text Notes 10950 3050 0    50   ~ 0
+J
+Wire Wire Line
+	7100 2600 7100 5400
+Text GLabel 11750 2500 2    50   Input ~ 0
+Router
+Entry Wire Line
+	11300 2600 11400 2500
+Wire Wire Line
+	11300 2600 7100 2600
+Wire Wire Line
+	5000 5400 5000 5300
+Wire Wire Line
+	5000 5300 6100 5300
+Wire Wire Line
+	6100 5300 6100 6450
+Wire Wire Line
+	6100 6450 8750 6450
+Wire Wire Line
+	8750 6450 8750 2750
+Entry Wire Line
+	11550 2500 11450 2600
+Wire Wire Line
+	11450 2700 11450 2600
+Wire Notes Line
+	8500 3500 9000 3500
+Wire Notes Line
+	9000 3500 9000 4000
+Wire Notes Line
+	9000 4000 8500 4000
+Wire Notes Line
+	8500 4000 8500 3500
+Text Notes 8950 3950 0    50   ~ 0
+I
+Wire Wire Line
+	7400 2900 11300 2900
+Wire Wire Line
+	7400 2900 7400 5400
+Wire Notes Line
+	9500 3100 9000 3100
+Text Notes 7650 2850 0    50   ~ 0
+Route these through E\n(can't be connected \nstraight to H)
+Wire Wire Line
+	10750 2700 11450 2700
+Wire Wire Line
+	10750 2750 10750 2700
+Wire Wire Line
+	8750 2750 10750 2750
+Wire Wire Line
+	10750 2750 10750 2800
+Wire Wire Line
+	10750 2800 11450 2800
+Connection ~ 10750 2750
+Text Notes 11000 2600 0    50   ~ 0
+L
+Text Notes 11000 2700 0    50   ~ 0
+N
+Text Notes 11000 2800 0    50   ~ 0
+N
+Text Notes 11000 2900 0    50   ~ 0
+L
+Text Notes 10450 2600 0    50   ~ 0
+L
+Text Notes 10450 2750 0    50   ~ 0
+N
+Text Notes 10450 2900 0    50   ~ 0
+L
+Text Notes 9500 2600 0    50   ~ 0
+L
+Text Notes 9500 2900 0    50   ~ 0
+L
+Text Notes 9500 2750 0    50   ~ 0
+N
+Text Notes 8950 2750 0    50   ~ 0
+N
+Text Notes 8950 2600 0    50   ~ 0
+L
+Text Notes 8950 2900 0    50   ~ 0
+L
+Text Notes 8750 3500 0    50   ~ 0
+N
+Text Notes 8750 4100 0    50   ~ 0
+N
+Text GLabel 11750 3000 2    50   Input ~ 0
+BACK-LIGHTS
+Entry Wire Line
+	11300 2900 11400 3000
+Entry Wire Line
+	11450 2900 11550 3000
+Wire Wire Line
+	11450 2800 11450 2900
+Wire Bus Line
+	11400 3000 11750 3000
+Wire Bus Line
+	11400 2500 11750 2500
+Wire Bus Line
+	6350 1800 6650 1800
+Wire Bus Line
+	7250 1600 7750 1600
+Wire Bus Line
+	7050 1900 7600 1900
 $EndSCHEMATC
