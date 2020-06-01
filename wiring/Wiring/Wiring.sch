@@ -69,16 +69,12 @@ F 3 "" H 4650 6000 50  0001 C CNN
 	1    4650 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 5400 3900 5000
-Wire Wire Line
-	6800 5000 6800 5400
 Entry Wire Line
 	6950 2000 7050 1900
 Entry Wire Line
 	7150 1900 7050 2000
 Text GLabel 7600 1900 2    50   Input ~ 0
-A-AIRCON
+D-B-A-AIRCON
 Entry Wire Line
 	7250 1500 7350 1600
 Entry Wire Line
@@ -100,17 +96,11 @@ Wire Wire Line
 Wire Wire Line
 	6350 2200 6000 2200
 Text GLabel 6650 1800 2    50   Input ~ 0
-C
+D-B-C-FRIDGE
 Wire Wire Line
 	7100 5000 7100 5400
 Text GLabel 7100 5000 1    50   Input ~ 0
 H-ROUTER...
-Wire Wire Line
-	6600 5400 6600 4800
-Wire Wire Line
-	6600 4800 3600 4800
-Wire Wire Line
-	3600 4800 3600 5400
 Text GLabel 7400 5000 1    50   Input ~ 0
 J-BACK-LIGHTS
 Wire Wire Line
@@ -142,12 +132,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 5200 4900 5400
 Wire Wire Line
-	4000 5400 4000 4900
-Wire Wire Line
-	4000 4900 6900 4900
-Wire Wire Line
-	6900 4900 6900 5400
-Wire Wire Line
 	7500 5400 7500 5000
 Text GLabel 7500 5000 1    50   Input ~ 0
 K-FRONT-LIGHTS
@@ -164,11 +148,37 @@ Wire Wire Line
 Wire Wire Line
 	4800 5100 4800 5400
 Wire Wire Line
-	6800 5000 3900 5000
+	3600 2100 4400 2100
+Wire Wire Line
+	3900 2200 4400 2200
+Wire Wire Line
+	4000 2300 4400 2300
+Wire Wire Line
+	6600 2800 6000 2800
+Wire Wire Line
+	6600 2800 6600 5400
+Wire Wire Line
+	3600 2100 3600 5400
+Wire Wire Line
+	6000 2900 6800 2900
+Wire Wire Line
+	6800 2900 6800 5400
+Wire Wire Line
+	3900 2200 3900 5400
+Wire Wire Line
+	6000 3000 6900 3000
 Wire Bus Line
 	6350 1800 6650 1800
 Wire Bus Line
 	7250 1600 7750 1600
 Wire Bus Line
 	7050 1900 7600 1900
+Wire Wire Line
+	4000 2300 4000 5400
+Wire Wire Line
+	6900 3000 6900 5400
+Text Notes 5250 5200 0    50   ~ 0
+TODO: Connect these to E!
+Text Notes 7300 1450 0    50   ~ 0
+27V if circuit broken
 $EndSCHEMATC
