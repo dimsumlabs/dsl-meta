@@ -88,10 +88,6 @@ Wire Wire Line
 	13000 8400 13000 8000
 Text GLabel 13000 8000 1    50   Input ~ 0
 K-FRONT-LIGHTS
-Text Notes 12700 8300 1    50   ~ 0
-10V if off + lights on
-Text Notes 13150 8300 1    50   ~ 0
-23V with lights on (small V with lights off)
 Wire Wire Line
 	10300 8100 12200 8100
 Wire Wire Line
@@ -112,8 +108,6 @@ Wire Wire Line
 	9500 5300 9500 11450
 Wire Wire Line
 	12400 6000 12400 8400
-Text Notes 11100 4450 0    50   ~ 0
-27V if circuit broken
 Wire Notes Line
 	15600 6750 16100 6750
 Wire Notes Line
@@ -389,8 +383,6 @@ F 3 "" H 12750 700 50  0001 C CNN
 	1    13450 850 
 	-1   0    0    1   
 $EndComp
-Text Notes 13300 8300 1    50   ~ 0
-15V with lights on (small V with lights off)
 Wire Wire Line
 	14450 5400 14450 2150
 Wire Wire Line
