@@ -88,14 +88,10 @@ Wire Wire Line
 	13000 8400 13000 8000
 Text GLabel 13000 8000 1    50   Input ~ 0
 K-FRONT-LIGHTS
-NoConn ~ 13200 8400
 Text Notes 12700 8300 1    50   ~ 0
 10V if off + lights on
-NoConn ~ 13100 8400
 Text Notes 13150 8300 1    50   ~ 0
 23V with lights on (small V with lights off)
-Text Notes 13250 8300 1    50   ~ 0
-15V with lights on (small V with lights off)
 Wire Wire Line
 	10300 8100 12200 8100
 Wire Wire Line
@@ -149,12 +145,12 @@ Entry Wire Line
 Wire Wire Line
 	16950 5700 16950 5600
 Wire Notes Line
-	10800 9400 11300 9400
+	11300 9400 11800 9400
 Wire Notes Line
-	11300 9900 10800 9900
+	11800 9900 11300 9900
 Wire Notes Line
-	10800 9900 10800 9400
-Text Notes 11250 9850 0    50   ~ 0
+	11300 9900 11300 9400
+Text Notes 11750 9850 0    50   ~ 0
 I
 Wire Wire Line
 	12900 5900 12900 8400
@@ -197,9 +193,9 @@ Text Notes 14450 5600 0    50   ~ 0
 L
 Text Notes 14450 5900 0    50   ~ 0
 L
-Text Notes 11050 9400 0    50   ~ 0
+Text Notes 11550 9400 0    50   ~ 0
 N
-Text Notes 11050 10000 0    50   ~ 0
+Text Notes 11550 10000 0    50   ~ 0
 N
 Text GLabel 17250 6000 2    50   Input ~ 0
 BACK-LIGHTS
@@ -310,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 5000 8900 9550
 Wire Notes Line
-	11300 9400 11300 9900
+	11800 9400 11800 9900
 Wire Wire Line
 	8900 9550 14150 9550
 Wire Wire Line
@@ -322,21 +318,12 @@ L Wiring:B U?
 U 1 1 5EDCE2C5
 P 12200 1650
 F 0 "U?" H 11650 2150 50  0001 C CNN
-F 1 "B" H 12200 1077 50  0000 C CNN
+F 1 "B" H 12600 1250 50  0000 C CNN
 F 2 "" H 11500 1500 50  0001 C CNN
 F 3 "" H 11500 1500 50  0001 C CNN
 	1    12200 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12500 1100 12500 1000
-Wire Wire Line
-	12600 1100 12600 1000
-Entry Wire Line
-	12500 1000 12600 900 
-Entry Wire Line
-	12600 1000 12700 900 
-NoConn ~ 12850 900 
 Wire Wire Line
 	10950 3650 10600 3650
 Wire Wire Line
@@ -358,7 +345,7 @@ L Wiring:D U?
 U 1 1 5EE0B04E
 P 14200 1550
 F 0 "U?" H 13650 2050 50  0001 C CNN
-F 1 "D" H 14728 1467 50  0000 L CNN
+F 1 "D" H 14600 1150 50  0000 L CNN
 F 2 "" H 13500 2050 50  0001 C CNN
 F 3 "" H 13500 2050 50  0001 C CNN
 	1    14200 1550
@@ -392,20 +379,6 @@ Wire Wire Line
 	12800 1300 13600 1300
 Wire Wire Line
 	12800 1400 13600 1400
-Wire Bus Line
-	10850 1850 11400 1850
-Wire Bus Line
-	12600 900  12850 900 
-Wire Bus Line
-	11600 2950 11900 2950
-Wire Bus Line
-	16900 6000 17250 6000
-Wire Bus Line
-	16900 5500 17250 5500
-Wire Bus Line
-	11900 700  12200 700 
-Wire Bus Line
-	11050 4600 11550 4600
 $Comp
 L Wiring:E U2
 U 1 1 5ED38C33
@@ -417,4 +390,49 @@ F 3 "" H 10700 5550 50  0001 C CNN
 	1    10700 5550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Wiring:U U?
+U 1 1 5EE3602B
+P 13450 850
+F 0 "U?" H 13300 1000 50  0001 C CNN
+F 1 "U" H 13300 1000 50  0000 C CNN
+F 2 "" H 12750 700 50  0001 C CNN
+F 3 "" H 12750 700 50  0001 C CNN
+	1    13450 850 
+	-1   0    0    1   
+$EndComp
+Text Notes 13300 8300 1    50   ~ 0
+15V with lights on (small V with lights off)
+Wire Wire Line
+	14450 5400 14450 2150
+Wire Wire Line
+	13150 900  12500 900 
+Wire Wire Line
+	12500 900  12500 1100
+Wire Wire Line
+	12600 1100 12600 800 
+Wire Wire Line
+	12600 800  13150 800 
+Wire Wire Line
+	14350 2150 14350 5100
+Wire Wire Line
+	11500 5100 14350 5100
+Wire Wire Line
+	13200 8400 13200 6300
+Wire Wire Line
+	13200 6300 11500 6300
+Wire Wire Line
+	11500 5400 14450 5400
+Wire Bus Line
+	10850 1850 11400 1850
+Wire Bus Line
+	11600 2950 11900 2950
+Wire Bus Line
+	16900 6000 17250 6000
+Wire Bus Line
+	16900 5500 17250 5500
+Wire Bus Line
+	11900 700  12200 700 
+Wire Bus Line
+	11050 4600 11550 4600
 $EndSCHEMATC
