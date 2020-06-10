@@ -111,29 +111,15 @@ Wire Wire Line
 Wire Notes Line
 	15600 6750 16100 6750
 Wire Notes Line
-	16100 6750 16100 7350
+	16100 6750 16100 7250
 Wire Notes Line
-	15600 7350 15600 6750
-Text Notes 16000 7300 0    50   ~ 0
-H
-Wire Notes Line
-	17100 6750 17600 6750
-Wire Notes Line
-	17600 6750 17600 7350
-Wire Notes Line
-	17600 7350 17100 7350
-Wire Notes Line
-	17100 7350 17100 6750
-Text Notes 17550 7300 0    50   ~ 0
-J
-Text GLabel 18350 6750 2    50   Input ~ 0
+	15600 7250 15600 6750
+Text GLabel 18000 6450 2    50   Input ~ 0
 ROUTER
 Entry Wire Line
-	17900 6850 18000 6750
+	17550 6550 17650 6450
 Entry Wire Line
-	18150 6750 18050 6850
-Wire Wire Line
-	18050 6950 18050 6850
+	17750 6450 17650 6550
 Wire Notes Line
 	11250 9750 11750 9750
 Wire Notes Line
@@ -144,51 +130,24 @@ Text Notes 11700 10200 0    50   ~ 0
 I
 Wire Wire Line
 	12900 5900 12900 8400
-Wire Notes Line
-	16100 7350 15600 7350
-Wire Wire Line
-	17350 6950 18050 6950
-Wire Wire Line
-	17350 7000 17350 6950
-Wire Wire Line
-	17350 7000 17350 7050
-Wire Wire Line
-	17350 7050 18050 7050
-Connection ~ 17350 7000
-Text Notes 17600 6850 0    50   ~ 0
+Text Notes 16100 6900 0    50   ~ 0
 L
-Text Notes 17600 6950 0    50   ~ 0
-N
-Text Notes 17600 7050 0    50   ~ 0
-N
-Text Notes 17600 7150 0    50   ~ 0
-L
-Text Notes 17050 6850 0    50   ~ 0
-L
-Text Notes 17050 7000 0    50   ~ 0
-N
-Text Notes 17050 7150 0    50   ~ 0
-L
-Text Notes 16100 6850 0    50   ~ 0
-L
-Text Notes 16100 7150 0    50   ~ 0
+Text Notes 16100 7100 0    50   ~ 0
 L
 Text Notes 16100 7000 0    50   ~ 0
 N
 Text Notes 15550 7000 0    50   ~ 0
 N
-Text Notes 15550 6850 0    50   ~ 0
+Text Notes 15550 6900 0    50   ~ 0
 L
-Text Notes 15550 7150 0    50   ~ 0
+Text Notes 15550 7100 0    50   ~ 0
 L
-Text GLabel 18350 7250 2    50   Input ~ 0
+Text GLabel 18600 7150 2    50   Input ~ 0
 BACK-LIGHTS
 Entry Wire Line
-	17900 7150 18000 7250
+	18150 7050 18250 7150
 Entry Wire Line
-	18050 7150 18150 7250
-Wire Wire Line
-	18050 7050 18050 7150
+	18300 7050 18400 7150
 Wire Wire Line
 	12300 8400 12300 8000
 Wire Wire Line
@@ -251,10 +210,6 @@ Wire Wire Line
 	12900 5900 11500 5900
 Wire Wire Line
 	10600 9900 14250 9900
-Wire Wire Line
-	14350 7150 14350 10000
-Wire Wire Line
-	14150 6850 14150 9800
 Wire Wire Line
 	9900 5200 9000 5200
 Wire Wire Line
@@ -424,12 +379,6 @@ Wire Wire Line
 Wire Wire Line
 	10800 10300 10800 11450
 Wire Wire Line
-	14150 6850 17900 6850
-Wire Wire Line
-	14250 7000 17350 7000
-Wire Wire Line
-	14350 7150 17900 7150
-Wire Wire Line
 	14550 2950 15800 2950
 $Comp
 L Wiring:L U?
@@ -477,18 +426,53 @@ Wire Wire Line
 	10500 2750 10500 2550
 Wire Wire Line
 	10400 2550 10400 2750
+$Comp
+L Wiring:J U?
+U 1 1 5EE46860
+P 17600 7000
+F 0 "U?" H 17300 7200 50  0001 C CNN
+F 1 "J" H 17900 6800 50  0000 C CNN
+F 2 "" H 16800 6850 50  0001 C CNN
+F 3 "" H 16800 6850 50  0001 C CNN
+	1    17600 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18300 7050 18300 6950
+Wire Wire Line
+	18300 6950 18050 6950
+Wire Wire Line
+	18050 7050 18150 7050
+Wire Wire Line
+	17650 6650 17650 6550
+Wire Wire Line
+	17550 6550 17550 6650
+Wire Wire Line
+	14150 6900 14150 9800
+Wire Wire Line
+	14250 7000 17150 7000
+Wire Wire Line
+	14350 7100 14350 10000
+Text Notes 16050 7250 0    50   ~ 0
+H
+Wire Notes Line
+	16100 7250 15600 7250
+Wire Wire Line
+	17150 6900 14150 6900
+Wire Wire Line
+	17150 7100 14350 7100
+Wire Bus Line
+	15750 6100 15950 6100
 Wire Bus Line
 	10850 1850 11400 1850
 Wire Bus Line
 	10500 2450 10800 2450
 Wire Bus Line
-	18000 7250 18350 7250
+	18250 7150 18600 7150
 Wire Bus Line
-	18000 6750 18350 6750
+	17650 6450 18000 6450
 Wire Bus Line
 	11900 700  12200 700 
 Wire Bus Line
 	11050 4600 11550 4600
-Wire Bus Line
-	15750 6100 15950 6100
 $EndSCHEMATC
