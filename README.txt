@@ -3,4 +3,3 @@ labs, without being big enough to be projects on their own.
 
 Mainly, this is various signs or notices that will will printed out
 and display.
-
