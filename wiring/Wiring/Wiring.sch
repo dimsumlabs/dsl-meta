@@ -465,6 +465,10 @@ F 3 "" H 16500 2200 50  0001 C CNN
 	1    17200 2350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9800 11450 9800 11000
+Wire Wire Line
+	9800 11000 11950 11000
 Wire Bus Line
 	15750 6100 15950 6100
 Wire Bus Line
@@ -479,4 +483,6 @@ Wire Bus Line
 	11900 700  12200 700 
 Wire Bus Line
 	11050 4600 11550 4600
+Text Notes 11950 11000 0    50   ~ 0
+Fix: The router\nis connected here (5),\nnot on 1!
 $EndSCHEMATC
